@@ -1,0 +1,40 @@
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #EFEFEF;
+    color: #FF3B3F;
+    flex-direction: row;
+}
+
+.navbar-brand {
+    background-color: rgba(255, 255, 255, 0);
+    color: #565656;
+    height: 50px;
+    font-size: 2em;
+
+}
+
+.navbar-toggler-icon {
+    background-color: black;
+}
+
+.nav-link {
+    color: #FF3B3F;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .navbar-brand {
+        margin: 20px 50px;
+    }
+};
