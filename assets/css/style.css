@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 /* Navbar */
@@ -44,7 +45,6 @@ html, body {
     width: 100%;
     min-height: 100%;
     background-color: #76323F;
-    margin-bottom: 50px;
 }
 
 #landing-title {
@@ -64,6 +64,8 @@ html, body {
 
 .content-div {
     color: #565656;
+    background-color: #EFEFEF;
+    padding-top: 50px;
 }
 
 .grey-h1 {
@@ -73,7 +75,7 @@ html, body {
 /* About me */
 
 #about-me-div {
-    margin-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .fa-angle-double-up {
@@ -83,13 +85,46 @@ html, body {
 /* Portfolio */
 
 #portfolio-div {
-    padding-top: 60px;
     background-color: #FF3B3F;
     color: #EFEFEF;
+    width: 100%;
 }
 
 .white-h1 {
     color: #EFEFEF;
+}
+
+/* Card Carousel */
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
 }
 
 /* Media queries */
