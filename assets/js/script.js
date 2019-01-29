@@ -4,5 +4,27 @@ $(function() {
     // manual carousel controls
     $('.next').click(function(){ $('.carousel').carousel('next');return false; });
     $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+
+    $("#send-email-btn").on("click", function() {
+
+    });
+
+
+    $("#navbar-id a").on("click", function() {
+
+        if (this.hash !== "") {
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                window.location.hash = hash;
+            })
+
+        };
+    });
     
 });

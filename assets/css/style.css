@@ -3,6 +3,10 @@ html, body {
     width: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Navbar */
 
 .navbar {
@@ -68,6 +72,10 @@ html, body {
     padding-top: 50px;
 }
 
+.fa-angle-double-up {
+    margin-right: 5px;
+}
+
 .grey-h1 {
     color: #565656;
 }
@@ -76,10 +84,15 @@ html, body {
 
 #about-me-div {
     padding-bottom: 15px;
+    clear: both;
 }
 
-.fa-angle-double-up {
-    margin-right: 5px;
+#to-top-btn-1 {
+    color: #FF3B3F;
+}
+
+.profile-pic {
+    max-height: 300px;
 }
 
 /* Portfolio */
@@ -88,9 +101,15 @@ html, body {
     background-color: #FF3B3F;
     color: #EFEFEF;
     width: 100%;
+    clear: both;
+    padding-bottom: 10px;
 }
 
 .white-h1 {
+    color: #EFEFEF;
+}
+
+#to-top-btn-2 {
     color: #EFEFEF;
 }
 
@@ -107,11 +126,20 @@ html, body {
 
 .card {
     margin: 10px auto;
-    background-color: rgb(206, 206, 206);
+    background-color: #EFEFEF;
+    border: 1px black solid;
 }
 
 .card-title, .card-text {
     color: #76323F;
+}
+
+.card-block {
+    border-top: 2px black solid;
+}
+
+.project-btn {
+    margin-bottom: 10px;
 }
 
 /* equal card height */
@@ -143,6 +171,24 @@ html, body {
     overflow:hidden;
 }
 
+/* Contact me */
+
+#contact-div {
+    background-color: #76323F;
+    color: #EFEFEF;
+    padding-bottom: 20px;
+}
+
+#contact-jumbo {
+    color: #76323F;
+    background-color: #EFEFEF;
+    text-align: center;
+}
+
+#to-top-btn-3 {
+    color: #EFEFEF;
+}
+
 /* Media queries */
 
 @media only screen and (min-width: 768px) {
@@ -155,6 +201,16 @@ html, body {
     #landing-title {
         font-size: 4em;
     }
+
+    /* .profile-pic {
+        float: left;
+        max-width: 500px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+    } */
+
+    /* About me */
+
 
 }
 

@@ -20,7 +20,7 @@
 <body>
 
     <!-- Navbar -->
-    <header class="navbar navbar-expand-lg flex-md-row bd-navbar">
+    <header id="navbar-id" class="navbar navbar-expand-lg flex-md-row bd-navbar">
         <a class="navbar-brand" href="index.html">Dylan Bonds</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-links"
             aria-controls="page-links" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,16 +45,16 @@
         <div class="collapse navbar-collapse" id="page-links">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">About Me</a>
+                    <a class="nav-link" href="#about-me-div">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#portfolio-div">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact-div">Contact</a>
                 </li>
             </ul>
-            <button class="btn btn-info" type="button">Download CV</button>
+            <button class="btn btn-info" type="button">Resume PDF</button>
         </div>
     </header>
 
@@ -71,25 +71,33 @@
     <!-- About Me -->
 
     <div id="about-me-div" class="container-fluid content-div">
-        <h1 class="grey-h1">About Me</h1>
-        <p>Everybody get up, it's time to slam now,
-            we got a real jam goin' down,
-            welcome to the Space Jam,
-            here's your chance, do your dance at the Space Jam.
-            <br>
-            Alright...</p>
-        <p>Come on and slam, and welcome to the jam!
-            Come on and slam, if you wanna jam!</p>
-        <img class="img-fluid" src="assets/images/db-portfolio-pic.JPG" alt="dylan bonds profile pic">
-        <h4>Space Jam</h4>
-        <p>Wave your hands in the air if you feel fine,
-            we're gonna take it into overtime,
-            welcome to the Space Jam,
-            here's your chance, do your dance at the Space Jam.
-            <br>
-            Alright...</p>
+        <div class="row">
+            <h1 class="grey-h1">About Me</h1>
+            <p>Everybody get up, it's time to slam now,
+                we got a real jam goin' down,
+                welcome to the Space Jam,
+                here's your chance, do your dance at the Space Jam.
+                <br>
+                Alright...</p>
+            <p>Come on and slam, and welcome to the jam!
+                Come on and slam, if you wanna jam!</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-7 col-lg-4">
+                <img class="img-fluid profile-pic" src="assets/images/db-portfolio-pic.JPG" alt="dylan bonds profile pic">
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-8">
+                <h4>Space Jam</h4>
+                <p>Wave your hands in the air if you feel fine,
+                we're gonna take it into overtime,
+                welcome to the Space Jam,
+                here's your chance, do your dance at the Space Jam.
+                <br>
+                Alright...</p>
+            </div>
+        </div>
 
-        <a href="#"><i class="fas fa-angle-double-up"></i>Back to top</a>
+        <a id="to-top-btn-1" href="#"><i class="fas fa-angle-double-up"></i>Back to top</a>
     </div>
 
     <!-- Portfolio -->
@@ -97,7 +105,6 @@
     <div id="portfolio-div" class="container-fluid content-div">
         <h1 class="white-h1">My Projects</h1>
 
-        <!-- short intro -->
         <p>Here are some projects from the bootcamp at KU. </p>
         <p>I'd recommend checking out <em>Scout</em>, my first collaborative project. The <em>Scout</em> team and I put a lot of work into 
             a ride-share comparison service, whilst dealing with some pretty hefty limitations.
@@ -119,39 +126,45 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-img-top card-img-top-200">
-                                <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
+                                <img class="img-fluid" src="assets/images/scout-example.png" alt="Scout project image">
                             </div>
                             <div class="card-block p-t-2">
                                 <h2>
-                                    <a class="card-title" href>Scout</a>
+                                    <a class="card-title" href="https://djwasing.github.io/Scout-Project-App/">Scout</a>
                                 </h2>
-                                <p class="card-text">Info.</p>
+                                <p class="card-text">Straightforward, no frills ride-share comparison application.</p>
+                                <a class="btn btn-primary project-btn" href="https://djwasing.github.io/Scout-Project-App/">See Project</a>
+                                <a class="btn btn-dark project-btn" href="https://github.com/djwasing/Scout-Project-App">GitHub Code</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-img-top card-img-top-200">
-                                <img class="img-fluid" src="http://i.imgur.com/Hw7sWGU.png" alt="Carousel 2">
+                                <img class="img-fluid" src="assets/images/train-example.png" alt="Train scheduler project image">
                             </div>
                             <div class="card-block p-t-2">
                                 <h2>
-                                    <a class="card-title" href>Scout</a>
+                                    <a class="card-title" href="https://mangodyl.github.io/train-scheduler/">Train Scheduler</a>
                                 </h2>
-                                <p class="card-text">Info.</p>
+                                <p class="card-text">A simple train scheduler, making use of Firebase and moment.js for the first time.</p>
+                                <a class="btn btn-success project-btn" href="https://mangodyl.github.io/train-scheduler/">See Project</a>
+                                <a class="btn btn-dark project-btn" href="https://github.com/mangodyl/train-scheduler">GitHub Code</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-img-top card-img-top-200">
-                                <img class="img-fluid" src="http://i.imgur.com/g27lAMl.png" alt="Carousel 3">
+                                <img class="img-fluid" src="assets/images/hangman-example.png" alt="Hangman project image">
                             </div>
                             <div class="card-block p-t-2">
                                 <h2>
-                                    <a class="card-title" href>Scout</a>
+                                    <a class="card-title" href="https://mangodyl.github.io/word-guess-game/">Music Hangman</a>
                                 </h2>
-                                <p class="card-text">Info.</p>
+                                <p class="card-text">One-word bands hangman game. One of my first ever projects.</p>
+                                <a class="btn btn-danger project-btn" href="https://mangodyl.github.io/word-guess-game/">See Project</a>
+                                <a class="btn btn-dark project-btn" href="https://github.com/mangodyl/word-guess-game">GitHub Code</a>
                             </div>
                         </div>
                     </div>
@@ -160,39 +173,45 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-img-top card-img-top-200">
-                                <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 4">
+                                <img class="img-fluid" src="assets/images/trivia-example.png" alt="Trivia game project image">
                             </div>
                             <div class="card-block p-t-2">
                                 <h2>
-                                    <a class="card-title" href>Scout</a>
+                                    <a class="card-title" href="https://mangodyl.github.io/TriviaGame/">Trivia Game</a>
                                 </h2>
-                                <p class="card-text">Info.</p>
+                                <p class="card-text">Had great fun making a trivia game of niche knowledge. First use of timer functions.</p>
+                                <a class="btn btn-danger project-btn" href="https://mangodyl.github.io/TriviaGame/">See Project</a>
+                                <a class="btn btn-dark project-btn" href="https://github.com/mangodyl/TriviaGame">GitHub Code</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-img-top card-img-top-200">
-                                <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 5">
+                                <img class="img-fluid" src="assets/images/pokemon-example.jpg" alt="Pokemon game project image">
                             </div>
                             <div class="card-block p-t-2">
                                 <h2>
-                                    <a class="card-title" href>Scout</a>
+                                    <a class="card-title" href="https://mangodyl.github.io/unit-4-game/">Pokémon Game</a>
                                 </h2>
-                                <p class="card-text">Info.</p>
+                                <p class="card-text">Very basic attack game, but it really helped solidify basic js concepts. </p>
+                                <a class="btn btn-success project-btn" href="https://mangodyl.github.io/unit-4-game/">See Project</a>
+                                <a class="btn btn-dark project-btn" href="https://github.com/mangodyl/unit-4-game">GitHub Code</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 fadeIn wow">
                         <div class="card">
                             <div class="card-img-top card-img-top-200">
-                                <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 6">
+                                <img class="img-fluid" src="assets/images/gif-btn-example.png" alt="Gif button project image">
                             </div>
                             <div class="card-block p-t-2">
                                 <h2>
-                                    <a class="card-title" href>Scout</a>
+                                    <a class="card-title" href="https://mangodyl.github.io/Gif-Buttons/">Gif Buttons</a>
                                 </h2>
-                                <p class="card-text">Info.</p>
+                                <p class="card-text">First use of API in a project. Being able to stop the gifs on screen saved me from headaches here.</p>
+                                <a class="btn btn-primary project-btn" href="https://mangodyl.github.io/Gif-Buttons/">See Project</a>
+                                <a class="btn btn-dark project-btn" href="https://github.com/mangodyl/Gif-Buttons">GitHub Code</a>
                             </div>
                         </div>
                     </div>
@@ -204,10 +223,47 @@
 
         <p>Amongst the gems you may have found a few of my first ever projects. They're pretty basic, but we've all got to start somewhere, right?</p>
         <p>And besides, look how far I've come...</p>
-        
+
+        <a id="to-top-btn-2" href="#"><i class="fas fa-angle-double-up"></i>Back to top</a>
     </div>
 
-    <!-- contact me div -->
+    <!-- Contact Me -->
+
+    <div id="contact-div" class="container-fluid content-div">
+
+        <h1 class="white-h1">Get In Touch</h1>
+
+        <p>In case you need to contact me for whatever reason, here are the details to do just that.</p>
+        <p>You can also expand and submit a form with the button below.</p>
+        
+
+        <div id="contact-jumbo" class="jumbotron">
+            <h2 class="display-5">Email:</h2>
+            <p class="lead">dylanwbonds@gmail.com</p>
+            <h2 class="display-5">Phone:</h2>
+            <p class="lead">+44 (0) 7735 020 899</p>
+            <button id="send-email-btn" class="btn btn-primary btn-lg" role="button">Send email</a></button>
+        
+            <form class="container-fluid hidden">
+                <div clas="form-group">
+                    <label for="name-input">Name:</label>
+                    <input type="text" class="form-control" id="name-field" placeholder="Human Surname">
+                </div>
+                <div class="form-group">
+                    <label for="email-input">Email address:</label>
+                    <input type="email" class="form-control" id="email-field" aria-describedby="emailHelp"
+                        placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Your Messase:</label>
+                    <textarea class="form-control" id="message-field" rows="3" placeholder="Tell me your secrets here..."></textarea>
+                </div>
+            </form>
+        </div>
+
+          <a id="to-top-btn-3" href="#"><i class="fas fa-angle-double-up"></i>Back to top</a>
+    </div>
 
     <!-- Bootstrap Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
