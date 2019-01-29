@@ -96,6 +96,20 @@ html, body {
 
 /* Card Carousel */
 
+.carousel-inner {
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    margin: 10px auto;
+    background-color: rgb(206, 206, 206);
+}
+
+.card-title, .card-text {
+    color: #76323F;
+}
+
 /* equal card height */
 .row-equal > div[class*='col-'] {
     display: flex;
