@@ -96,6 +96,10 @@ html, body {
 
 /* Card Carousel */
 
+.next {
+    margin-right: 45px;
+}
+
 .carousel-inner {
     margin: auto;
     text-align: center;
@@ -134,10 +138,8 @@ html, body {
     display: flex;
 }
 
-
-/* control image height */
-.card-img-top-250 {
-    max-height: 250px;
+.card-img-top-200 {
+    max-height: 200px;
     overflow:hidden;
 }
 
