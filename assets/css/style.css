@@ -98,7 +98,7 @@ html, body {
 /* Portfolio */
 
 #portfolio-div {
-    background-color: #FF3B3F;
+    background-color: #76323F;
     color: #EFEFEF;
     width: 100%;
     clear: both;
@@ -138,6 +138,12 @@ html, body {
     border-top: 2px black solid;
 }
 
+.card-body {
+    min-height: 150px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
 .project-btn {
     margin-bottom: 10px;
 }
@@ -171,22 +177,27 @@ html, body {
     overflow:hidden;
 }
 
+
 /* Contact me */
 
 #contact-div {
-    background-color: #76323F;
-    color: #EFEFEF;
+    background-color: #EFEFEF;
+    color: #FF3B3F;
     padding-bottom: 20px;
 }
 
+.orange-h1 {
+    color: #FF3B3F;
+}
+
 #contact-jumbo {
-    color: #76323F;
-    background-color: #EFEFEF;
+    color: #EFEFEF;
+    background-color: #76323F;
     text-align: center;
 }
 
 #to-top-btn-3 {
-    color: #EFEFEF;
+    color: #FF3B3F;
 }
 
 #contact-form {
@@ -202,24 +213,43 @@ html, body {
 
 @media only screen and (min-width: 768px) {
 
-    /* Navbar */
-
-
     /* Landing */
 
     #landing-title {
-        font-size: 4em;
+        font-size: 8em;
     }
 
-    /* .profile-pic {
-        float: left;
-        max-width: 500px;
-        padding-bottom: 30px;
-        padding-right: 10px;
+    #landing-btn {
+        font-size: 2em;
+    }
+
+    /* Content */
+
+    /* .content-div {
+        font-size: 1.75em;
     } */
 
-    /* About me */
+    h1 {
+        font-size: 2em;
+    }
 
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .profile-pic {
+        max-height: 400px;
+    }
+
+    .lead, .display-5 {
+        font-size: 1.5em;
+    }
+
+    #send-email-btn {
+        font-size: 1em;
+        margin-top: 20px;
+    }
+    
 
 }
 
@@ -246,5 +276,15 @@ html, body {
 
     .fa-2x {
         margin: 10px;
+    }
+
+    /* Content */
+
+    h1, h4, p {
+        padding: 0px 20px;
+    }
+
+    .fa-angle-double-up {
+        margin-top: 30px;
     }
 };
