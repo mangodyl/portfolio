@@ -153,9 +153,9 @@ html, body {
 }
 
 /* ensure equal card height inside carousel */
-.carousel-inner>.row-equal.active, 
-.carousel-inner>.row-equal.next, 
-.carousel-inner>.row-equal.prev {
+.carousel-inner>.carousel-item.active, 
+.carousel-inner>.carousel-item-next, 
+.carousel-inner>.carousel-item-prev {
     display: flex;
 }
 
