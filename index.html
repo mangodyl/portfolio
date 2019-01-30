@@ -63,8 +63,8 @@
     <div class="d-flex flex-row text-center" id="landing">
         <div class="container">
             <h1 id="landing-title" class="display-3 animated fadeInDown slow"> Hey, stranger!</h1>
-            <button id="landing-btn" class="btn" type="button">Let me introduce myself...<br>
-                <i class="fas fa-chevron-down animated infinite heartbeat slow delay-2s"></i></button>
+            <a href="#about-me-div"><button id="landing-btn" class="btn" href="#about-me-div" type="button">Let me introduce myself...<br>
+                <i class="fas fa-chevron-down animated infinite heartbeat slow delay-2s"></i></button></a>
         </div>
     </div>
 
@@ -234,7 +234,7 @@
         <h1 class="white-h1">Get In Touch</h1>
 
         <p>In case you need to contact me for whatever reason, here are the details to do just that.</p>
-        <p>You can also expand and submit a form with the button below.</p>
+        <p>You can also expand a form and shoot me a message with the button below.</p>
         
 
         <div id="contact-jumbo" class="jumbotron">
@@ -244,8 +244,8 @@
             <p class="lead">+44 (0) 7735 020 899</p>
             <button id="send-email-btn" class="btn btn-primary btn-lg" role="button">Send email</a></button>
         
-            <form class="container-fluid hidden">
-                <div clas="form-group">
+            <form id="contact-form" class="container-fluid hidden">
+                <div class="form-group">
                     <label for="name-input">Name:</label>
                     <input type="text" class="form-control" id="name-field" placeholder="Human Surname">
                 </div>

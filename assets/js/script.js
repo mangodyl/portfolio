@@ -7,6 +7,8 @@ $(function() {
 
     $("#send-email-btn").on("click", function() {
 
+        $("#contact-form").removeClass("hidden");
+
     });
 
 
