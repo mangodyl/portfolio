@@ -24,13 +24,13 @@ $(function() {
                 scrollTop: $(hash).offset().top
               }, 800, function(){
                 window.location.hash = hash;
-            })
+            });
 
         };
     });
 
 
-    $("#intro-btn").on("click", function () {
+    $("#intro-btn").on("click", function() {
 
         event.preventDefault();
 
@@ -40,9 +40,10 @@ $(function() {
             scrollTop: $(hash).offset().top
         }, 800, function () {
             window.location.hash = hash;
-        })
+        });
 
 
     });
+
     
 });

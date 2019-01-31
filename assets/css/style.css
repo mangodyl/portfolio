@@ -182,7 +182,7 @@ html, body {
 
 #contact-div {
     background-color: #EFEFEF;
-    color: #FF3B3F;
+    color: #565656;
     padding-bottom: 20px;
 }
 
@@ -191,8 +191,8 @@ html, body {
 }
 
 #contact-jumbo {
-    color: #EFEFEF;
-    background-color: #76323F;
+    color: black;
+    background-color: #FF3B3F;
     text-align: center;
 }
 
@@ -250,6 +250,14 @@ html, body {
         margin-top: 20px;
     }
     
+
+    #contact-jumbo {
+        font-size: 2em;
+    }
+
+    .form-control {
+        font-size: 0.75em;
+    }
 
 }
 
