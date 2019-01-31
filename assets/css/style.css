@@ -213,6 +213,15 @@ html, body {
 
 @media only screen and (min-width: 768px) {
 
+    /* Navbar */
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 4;
+    }
+
     /* Landing */
 
     #landing-title {
@@ -225,20 +234,29 @@ html, body {
 
     /* Content */
 
-    /* .content-div {
-        font-size: 1.75em;
-    } */
-
-    h1 {
-        font-size: 2em;
+    .content-h1 {
+        font-size: 4em;
+        margin-left: 40px;
     }
 
     h4 {
-        font-size: 1.5em;
+        font-size: 2.5em;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+    .pp {
+        font-size: 150%;
+        margin: 0px 120px 0px 120px;
     }
 
     .profile-pic {
-        max-height: 400px;
+        max-height: 350px;
+        margin: 20 auto;
+    }
+
+    .fa-angle-double-up {
+        margin-top: 30px;
     }
 
     .lead, .display-5 {
@@ -249,10 +267,11 @@ html, body {
         font-size: 1em;
         margin-top: 20px;
     }
-    
 
     #contact-jumbo {
         font-size: 2em;
+        margin: 40px auto;
+        max-width: 90%;
     }
 
     .form-control {
@@ -265,12 +284,6 @@ html, body {
 @media only screen and (min-width: 992px) {
 
     /* Navbar */
-
-    .navbar {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
     
     .navbar-brand {
         margin: 10px 20px 20px 60px;
@@ -286,6 +299,11 @@ html, body {
         margin: 10px;
     }
 
+    .btn-info {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     /* Content */
 
     h1, h4, p {
@@ -295,4 +313,11 @@ html, body {
     .fa-angle-double-up {
         margin-top: 30px;
     }
+
+
+    .profile-pic {
+        max-height: 400px;
+        margin: 20px 50px 20px 120px;
+    }
+
 };
