@@ -74,6 +74,7 @@ html, body {
 
 .fa-angle-double-up {
     margin-right: 5px;
+    margin-top: 15px;
 }
 
 .grey-h1 {
@@ -201,6 +202,7 @@ html, body {
     color: black;
     background-color: #FF3B3F;
     text-align: center;
+    margin-top: 20px
 }
 
 #to-top-btn-3 {
@@ -327,6 +329,7 @@ html, body {
     .profile-pic {
         max-height: 400px;
         margin: 20px 50px 20px 120px;
+        padding-left: 0px;
     }
 
 };
