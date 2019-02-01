@@ -78,6 +78,11 @@ html, body {
 
 .grey-h1 {
     color: #565656;
+    margin-left: 10px;
+}
+
+.pp {
+    margin: 0 15px 0 15px;
 }
 
 /* About me */
@@ -93,6 +98,8 @@ html, body {
 
 .profile-pic {
     max-height: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* Portfolio */
@@ -226,7 +233,6 @@ html, body {
 
     #landing-title {
         font-size: 8em;
-        margin-top: 30%;
     }
 
     #landing-btn {
@@ -255,6 +261,7 @@ html, body {
     .profile-pic {
         max-height: 350px;
         margin: 20 auto;
+        padding-left: 70px;
     }
 
     .fa-angle-double-up {
