@@ -226,7 +226,33 @@ html, body {
     color: #EFEFEF;
 }
 
-/* Media queries */
+
+
+/* ---------- Blog ---------- */
+
+#blog-head {
+    background-color: #76323F;
+    height: 40%;
+    width: 100%;
+}
+
+#blog-title {
+    color: rgb(223, 223, 223);
+    margin: 10% auto;
+    max-width: 80%;
+}
+
+.blog-post-title {
+    margin-left: 20px;
+}
+
+.blog-text {
+    font-size: 1em;
+    margin: 10px 50px;
+}
+
+
+/* ---------- Media queries ---------- */
 
 @media only screen and (min-width: 768px) {
 
