@@ -18,7 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </head>
-<body>
+<body class="blog-body">
 
     <!-- Navbar -->
     <header id="navbar-id" class="navbar navbar-expand-lg flex-md-row bd-navbar">
@@ -46,13 +46,10 @@
         <div class="collapse navbar-collapse" id="page-links">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#about-me-div">About Me</a>
+                    <a class="nav-link" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio-div">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-div">Contact</a>
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=_NfnXdXpjL0">Mystery Link</a>
                 </li>
             </ul>
             <a href="assets/images/Dylan_Bonds_PDF_Resume.pdf" target="_blank"><button class="btn btn-info"
@@ -64,26 +61,88 @@
     
     <div class="d-flex flex-row text-center" id="blog-head">
         <div class="container-fluid">
-            <h1 id="blog-title" class="display-3 animated zoomIn slow">Blogger Rhythms</h1>
+            <h1 id="blog-title" class="display-3 animated fadeInDown slow">Blogarithms</h1>
         </div>
     </div>
+
+    <div class="d-flex flex-row" id="blog-line"></div>
     
-    <div class="container-fluid content-div blog-div">
+    <div class="container-fluid content-div blog-div animated fadeInUp slow">
         <div classs="row">
             <div class="col-md-9">
-                <h4 class="blog-post-title">Blog Post 1</h4>
+                <h4 class="blog-post-title"><em>GraphQL, Motivation && The Future</em></h4>
             </div>
-            <div class="col-md-3">
-                <p><em>18th Feb 2019</em></p>
+            <div class="col-md-3 blog-post-date">
+                <p><em>31st Mar 2019</em></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 blog-post-body">
-                <p class="blog-text">Blog text going here, lorem ipsum shiz and some other text to fill out the space and see what happens when the text wraps around to the next line.
+                <hr>
+
+                <h5 class="blog-post-subtitle">
+                    The Horror of Learning:
+                 </h5>
+
+                <p class="blog-text">
+                    All of you reading will understand what it's like to try learning something new, whether it be coding or another matter. 
+                    It's a universally shared experience, even if each person experiences it in a different way, as humans are the ultimate in learning dependency. 
+                    There are no instincts when it comes to things like surfing the internet, or using computers to build a platform where one can try and quell
+                    a crisis by writing a blog post. These actions are learned over the course of thousands of experiences. 
                 </p>
-                <p class="blog-text">Ok let's look at a new paragraph to check spacing and stuff. Man, it's a lot easier to type random stuff when you're just rambling on about what you're trying to do.
+                <p class="blog-text">
+                    Even common sense is just an ability to assess, developed by learnings that the brain then draws upon to come to a conclusion like "mmm, I feel 
+                    like I shouldn't read Pet Semetary after midnight when I have to get up early the next day". You haven't done it before, but you can bet that your boss 
+                    doesn't believe in undead cats, and if you come into work looking like sh*t and sleep at your desk until lunchtime there'll be trouble.
                 </p>
+                <p class="blog-text">
+                    This is thanks to all you've learned over the course of your life. Your work values presentability, and Stephen King books (while fantastic) are 
+                    make for sleepless nights.
+                </p>
+                <p class="blog-text">
+                    Essentially, humans are professional and relentless students, and yet I'm still having trouble with GraphQL.
+                </p>
+
+                <br>
+                <hr>
+                <br>
+
+                <h5 class="blog-post-subtitle">
+                    Info Overload from the Info Overlords:
+                </h5>
+                
+                <p class="blog-text">
+                    Some of you, like me, will know the harsh taste of <em>"I can do better"</em> or <em>"I'm not happy with it yet"</em> when it comes to learning. 
+                    Coding, however, has brought a new flavour to the mix:  <em>"How the hell am I meant to learn all this?"</em>
+                </p>
+                <p class="blog-text">
+                    The world of computer programming is so chock-full of information that it can be really hard to learn despite all our practice. This feeling has only 
+                    intensified recently, as when trying to learn GraphQL. The actual tech makes a lot of sense; creating schemas & resolvers, and making queries to 
+                    get responses back with the same structure (no under/over-fetching of data). It's super useful stuff, and it's not super hard to understand, but for 
+                    some reason learning GraphQL (or should I say, it's implementation) is just a struggle.
+                </p>
+                <p class="blog-text">
+                    I'm trying to learn this new tech while also having to look up a load of related things where I have gaps in my knowledge. It's to be expected of 
+                    course, as I have only been coding for about 4-5 months now, but I feel that so many unexplored topics feel the same. It's often a Catch-22 of having to know one 
+                    thing to learn the other, or you don't know how to leverage your current knowledge into this particular case.
+                </p>
+                <p class="blog-text">
+                    I'm currently trying to follow a fantastic <a href="https://www.robinwieruch.de/getting-started-github-graphql-api/">tutorial by Robin Wieruch</a> on how to use 
+                    GraphQL with React. I've already gone through his series on a <a href="https://www.robinwieruch.de/graphql-apollo-server-tutorial/">backend look at GraphQL with Node, Express, and Apollo</a>, 
+                    so I'm not completely lost, but as I start threading things in with React, I keep asking myself how I'm going to be able to fly solo.
+                </p>
+                <p class="blog-text">
+                    I have a project that I'm planning currently and I'm testing the waters of using GQL and React. How do I use what I know and the things I've covered in 
+                    the tutorials for my own projects, with different requirements and purposes?
+                </p>
+                <p class="blog-text">
+                    I guess it's something that I'll learn, just like everything else.
+                </p>
+
+                <br>
+
+                <h5 class="blog-sig">- D.B.</h5>
             </div>
         </div>
         
