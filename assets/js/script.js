@@ -5,12 +5,12 @@ $(function() {
     $('.next').click(function(){ $('.carousel').carousel('next');return false; });
     $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
 
-    $("#send-email-btn").on("click", function() {
+    // $("#send-email-btn").on("click", function() {
 
-        $("#contact-form").removeClass("hidden");
-        alert("My email form is currently down, but you can still use the email just above! \nThink of it like a DIY part of my page... please?")
+    //     $("#contact-form").removeClass("hidden");
+    //     alert("My email form is currently down, but you can still use the email just above! \nThink of it like a DIY part of my page... please?")
 
-    });
+    // });
 
 
     $("#navbar-id a").on("click", function() {
