@@ -228,6 +228,10 @@ html, body {
     color: #EFEFEF;
 }
 
+#footer .row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 /* ---------- Blog ---------- */
